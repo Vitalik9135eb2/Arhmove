@@ -1,0 +1,73 @@
+@import "./_mixins.scss";
+@import "./_vars.scss";
+
+
+.build{
+    margin: 110px 0 0 0;
+    .container{
+        @extend %container;
+        .build__inner{
+            @include flex (flex,column,flex-start,center);
+            .build__title{
+                @include text(48px,600,60px,$textColor);
+                text-align: center;
+                max-width: 535px;
+            }
+
+            .build__content{
+                margin: 40px 0 0 0;
+                @include flex (flex,row,center,center);
+                max-width: 100%;
+                flex-wrap: wrap;
+                &:hover{
+                    background-color: #b9b5b556;
+                }
+
+                .build__item{
+                    margin: 20px;
+                    width: 290px;
+                    
+                    .build__item__link{
+                       
+                        img{
+                            width: 100%;
+                            &:hover{
+                                background-color: #b9b5b556;
+                            }
+                        }
+                    }
+                 
+                    
+                }
+            }
+        }
+    }
+
+}
+
+.image-source-link {
+	color: #98C3D1;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}

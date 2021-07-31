@@ -1,0 +1,105 @@
+@import "./_mixins.scss";
+@import "./_vars.scss";
+
+
+
+.header{
+    @include flex(flex,column,center,center);
+
+    &__top{
+        margin: 35px 0 0 0;
+        width: 1340px;
+        @include flex(flex,row,space-between,center);
+
+        .header__nav{
+            @include flex(flex,row,space-between,center);
+            .logo{
+                width: 60px;
+                height: 28px;
+                img{
+                    width: 100%;
+                }
+            }
+            
+            .header__list{
+                @include flex(flex,row,space-between,center);
+                .header__list_item{
+                    margin: 0 0 0 50px;
+                    .header__link{
+                        @include text(14px,400,40px,$textColorLight);
+                        &:hover{
+                            color: darken($textColorLight, 40%)
+                        }
+                    }
+                }
+                    
+            }
+        }
+
+        .header__btn__wrap{
+        
+            .btn__searh{
+                width: 18px;
+                height: 18px;
+            }
+            .heder__top__btn{
+                margin: 0 0 0 30px;
+                @include text(14px,600,14px,$primaryColor);
+                background-color: $acentColor;
+                padding: 10px 20px;
+                border-radius: 4px;
+                &:hover{
+                    background-color: darken($acentColor, 10%);
+                }
+            }
+        }
+    }
+
+    &__content{
+        margin: 75px 0 0 0;
+        .container{
+            @extend %container;
+
+            .header__title{
+                @include text(112px,600,112px,$textColor);
+                max-width: 870px;
+                span{
+                    color: $acentColor;
+                }
+            }
+
+            .header__content_wrap{
+                margin: 50px 0 0 0;
+                @include flex (flex,row,space-between,flex-start);
+
+                .header__content_left{
+
+                    .header__text{
+                        margin: 10px 0 0 0;
+                        @include text(16px,400,22px,$textColor);
+                        max-width: 290px;
+                        letter-spacing: 0.7px;
+                    }
+                    .header__content_btn{
+                        margin: 50px 0 0 0;
+                        @include text(14px,400,14px,$primaryColor);
+                        background-color: $acentColor;
+                        border-radius: 4px;
+                        padding: 15px 30px;
+                        &:hover{
+                            background-color: darken($acentColor, 10%);
+                        }
+                    }
+                }
+
+                .header__content_right{
+                    width: 765px;
+                    height: 480px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
