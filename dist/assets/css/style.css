@@ -105,24 +105,24 @@ button {
   font-weight: 600;
 }
 
-.header__content .container, .build .container {
+.header__content .container, .build .container, .archmove .container {
     padding: 0 15px;
 }
 
 @media screen and (min-width: 575px) {
-    .header__content .container, .build .container {
+    .header__content .container, .build .container, .archmove .container {
         padding: 0 35px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .header__content .container, .build .container {
+    .header__content .container, .build .container, .archmove .container {
         padding: 0 50px;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .header__content .container, .build .container {
+    .header__content .container, .build .container, .archmove .container {
         padding: 0;
         width: 1100px;
         margin: 0 auto;
@@ -281,24 +281,24 @@ button {
     width: 100%;
 }
 
-.header__content .container, .build .container {
+.header__content .container, .build .container, .archmove .container {
     padding: 0 15px;
 }
 
 @media screen and (min-width: 575px) {
-    .header__content .container, .build .container {
+    .header__content .container, .build .container, .archmove .container {
         padding: 0 35px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .header__content .container, .build .container {
+    .header__content .container, .build .container, .archmove .container {
         padding: 0 50px;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .header__content .container, .build .container {
+    .header__content .container, .build .container, .archmove .container {
         padding: 0;
         width: 1100px;
         margin: 0 auto;
@@ -335,8 +335,8 @@ button {
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-align: center;
     align-items: center;
     max-width: 100%;
@@ -346,7 +346,23 @@ button {
 
 .build .container .build__inner .build__content .build__item {
     margin: 20px;
-    width: 315px;
+    width: 290px;
+}
+
+.build .container .build__inner .build__content .build__item .build__item__link {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.build .container .build__inner .build__content .build__item .build__item__link::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #b9b5b556;
+    top: 0;
 }
 
 .build .container .build__inner .build__content .build__item img {
@@ -376,4 +392,76 @@ button {
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
     opacity: 0;
+}
+
+.header__content .container, .build .container, .archmove .container {
+    padding: 0 15px;
+}
+
+@media screen and (min-width: 575px) {
+    .header__content .container, .build .container, .archmove .container {
+        padding: 0 35px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__content .container, .build .container, .archmove .container {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header__content .container, .build .container, .archmove .container {
+        padding: 0;
+        width: 1100px;
+        margin: 0 auto;
+    }
+}
+
+.archmove {
+    margin: 130px 0 0 0;
+}
+
+.archmove .container .archmove__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.archmove .container .archmove__inner .archmove__content_left .archmove__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #000;
+    max-width: 448px;
+}
+
+.archmove .container .archmove__inner .archmove__content_left .archmove__img {
+    margin-top: 40px;
+    width: 535px;
+    height: 610px;
+}
+
+.archmove .container .archmove__inner .archmove__content_right {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.archmove .container .archmove__inner .archmove__content_right .archmove__text_wrap .archmove__span {
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 26px;
+    color: #000;
 }

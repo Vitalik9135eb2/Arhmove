@@ -1,0 +1,110 @@
+@import "./_mixins.scss";
+@import "./_vars.scss";
+
+
+.sound{
+    margin: 130px 0 0 0;
+    .container{
+        @extend %container;
+        .sound__inner{
+            @include flex (flex,column,flex-start,center);
+            min-width: 0;
+            .sound__title{
+                @include text (48px,600,60px,$textColor);
+                max-width: 390px;
+                align-self: start;
+            }
+            .sound__slider__wrap{
+                min-width: 0;
+                position: relative;
+                max-width: 730px;
+                align-self: flex-end;
+            }
+
+            .sound__slider__wrap .slick-arrow{
+                position: absolute;
+                top: 20px;
+                left: 0;
+                font-size: 0;
+                width: 30px;
+                height: 30px;
+            }
+            .sound__slider__wrap .slick-arrow.slick-prev{
+                left: 0;
+               &::before{
+                position: absolute;
+                content: "→";
+                color: #000;
+                font-weight: 900;
+                width: 20px;
+                height: 20px;
+                font-size: 20px;
+               }
+            }
+
+            .sound__slider__wrap .slick-arrow.slick-next{
+                left: 400px;
+                display: block;
+                background-color: rgb(248, 246, 246);
+                &::before{
+                    position: absolute;
+                    content: "←";
+                    color: #000;
+                    font-weight: 900;
+                    width: 20px;
+                    height: 20px;
+                    font-size: 25px;
+                    
+                   
+
+                }
+                &:hover{
+                    background-color: rgba(223, 98, 98, 0.452);
+                }
+            }
+
+        }
+    }
+
+}
+
+
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}

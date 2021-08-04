@@ -24,3 +24,15 @@ $(document).ready(function() {
 		
 	});
 });
+
+
+
+
+
+
+//**Slaider */
+
+
+$(document).ready(function(){
+	$('.sound__slider__wrap').slick();
+});
