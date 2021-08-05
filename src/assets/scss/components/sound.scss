@@ -18,34 +18,49 @@
                 min-width: 0;
                 position: relative;
                 max-width: 730px;
+                max-height: 170px;
                 align-self: flex-end;
+                .slider__text{
+                    @include text (32px,400,51px,$textColor);
+                    text-overflow: ellipsis;
+                    max-height: 190px;
+                    max-width: 730px;
+                }
             }
 
             .sound__slider__wrap .slick-arrow{
                 position: absolute;
-                top: 20px;
+                top: 220px;
                 left: 0;
                 font-size: 0;
-                width: 30px;
-                height: 30px;
+                width: 60px;
+                height: 40px;
+                border-radius: 4px;
             }
             .sound__slider__wrap .slick-arrow.slick-prev{
-                left: 0;
-               &::before{
-                position: absolute;
-                content: "→";
-                color: #000;
-                font-weight: 900;
-                width: 20px;
-                height: 20px;
-                font-size: 20px;
-               }
+                left: 470px;
+                display: block;
+                background-color: #fff;
+                &::before{
+                    position: absolute;
+                    content: "→";
+                    color: #000;
+                    font-weight: 900;
+                    width: 20px;
+                    height: 20px;
+                    font-size: 35px;
+                    top: -2px;
+                    left: 13px;
+                }
+                &:hover{
+                    background-color: $acentColor;
+                }
             }
 
             .sound__slider__wrap .slick-arrow.slick-next{
                 left: 400px;
                 display: block;
-                background-color: rgb(248, 246, 246);
+                background-color: #fff;
                 &::before{
                     position: absolute;
                     content: "←";
@@ -53,13 +68,12 @@
                     font-weight: 900;
                     width: 20px;
                     height: 20px;
-                    font-size: 25px;
-                    
-                   
-
+                    font-size: 35px;
+                    top: -2px;
+                    left: 13px;
                 }
                 &:hover{
-                    background-color: rgba(223, 98, 98, 0.452);
+                    background-color: $acentColor;
                 }
             }
 

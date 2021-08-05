@@ -366,16 +366,28 @@ button {
       min-width: 0;
       position: relative;
       max-width: 730px;
+      max-height: 170px;
       align-self: flex-end; }
+      .sound .container .sound__inner .sound__slider__wrap .slider__text {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 51px;
+        color: #000;
+        text-overflow: ellipsis;
+        max-height: 190px;
+        max-width: 730px; }
     .sound .container .sound__inner .sound__slider__wrap .slick-arrow {
       position: absolute;
-      top: 20px;
+      top: 220px;
       left: 0;
       font-size: 0;
-      width: 30px;
-      height: 30px; }
+      width: 60px;
+      height: 40px;
+      border-radius: 4px; }
     .sound .container .sound__inner .sound__slider__wrap .slick-arrow.slick-prev {
-      left: 0; }
+      left: 470px;
+      display: block;
+      background-color: #fff; }
       .sound .container .sound__inner .sound__slider__wrap .slick-arrow.slick-prev::before {
         position: absolute;
         content: "→";
@@ -383,11 +395,15 @@ button {
         font-weight: 900;
         width: 20px;
         height: 20px;
-        font-size: 20px; }
+        font-size: 35px;
+        top: -2px;
+        left: 13px; }
+      .sound .container .sound__inner .sound__slider__wrap .slick-arrow.slick-prev:hover {
+        background-color: #FD665E; }
     .sound .container .sound__inner .sound__slider__wrap .slick-arrow.slick-next {
       left: 400px;
       display: block;
-      background-color: #f8f6f6; }
+      background-color: #fff; }
       .sound .container .sound__inner .sound__slider__wrap .slick-arrow.slick-next::before {
         position: absolute;
         content: "←";
@@ -395,9 +411,11 @@ button {
         font-weight: 900;
         width: 20px;
         height: 20px;
-        font-size: 25px; }
+        font-size: 35px;
+        top: -2px;
+        left: 13px; }
       .sound .container .sound__inner .sound__slider__wrap .slick-arrow.slick-next:hover {
-        background-color: rgba(223, 98, 98, 0.452); }
+        background-color: #FD665E; }
 
 /* Слайдер */
 /* Слайдер запущен */
