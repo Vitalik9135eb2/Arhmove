@@ -35,6 +35,6 @@ $(document).ready(function() {
 
 
 $(document).ready(function(){
-	$('.sound__slider__wrap').slick();
+	$('.sound__slider').slick();
 });
 //# sourceMappingURL=script.js.map
