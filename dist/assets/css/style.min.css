@@ -81,16 +81,16 @@ button {
   src: url("./../fonts/SFUIDisplay-Semibold.woff") format("woff");
   font-weight: 600; }
 
-.header__content .container, .build .container, .archmove .container, .sound .container {
+.header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
   padding: 0 15px; }
   @media screen and (min-width: 575px) {
-    .header__content .container, .build .container, .archmove .container, .sound .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
       padding: 0 35px; } }
   @media screen and (min-width: 768px) {
-    .header__content .container, .build .container, .archmove .container, .sound .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
       padding: 0 50px; } }
   @media screen and (min-width: 1280px) {
-    .header__content .container, .build .container, .archmove .container, .sound .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
       padding: 0;
       width: 1100px;
       margin: 0 auto; } }
@@ -186,16 +186,16 @@ button {
         .header__content .container .header__content_wrap .header__content_right img {
           width: 100%; }
 
-.header__content .container, .build .container, .archmove .container, .sound .container {
+.header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
   padding: 0 15px; }
   @media screen and (min-width: 575px) {
-    .header__content .container, .build .container, .archmove .container, .sound .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
       padding: 0 35px; } }
   @media screen and (min-width: 768px) {
-    .header__content .container, .build .container, .archmove .container, .sound .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
       padding: 0 50px; } }
   @media screen and (min-width: 1280px) {
-    .header__content .container, .build .container, .archmove .container, .sound .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
       padding: 0;
       width: 1100px;
       margin: 0 auto; } }
@@ -263,16 +263,16 @@ button {
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0; }
 
-.header__content .container, .build .container, .archmove .container, .sound .container {
+.header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
   padding: 0 15px; }
   @media screen and (min-width: 575px) {
-    .header__content .container, .build .container, .archmove .container, .sound .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
       padding: 0 35px; } }
   @media screen and (min-width: 768px) {
-    .header__content .container, .build .container, .archmove .container, .sound .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
       padding: 0 50px; } }
   @media screen and (min-width: 1280px) {
-    .header__content .container, .build .container, .archmove .container, .sound .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
       padding: 0;
       width: 1100px;
       margin: 0 auto; } }
@@ -333,16 +333,16 @@ button {
         .archmove .container .archmove__inner .archmove__content_right .archmove__btn:hover {
           background-color: #fc362c; }
 
-.header__content .container, .build .container, .archmove .container, .sound .container {
+.header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
   padding: 0 15px; }
   @media screen and (min-width: 575px) {
-    .header__content .container, .build .container, .archmove .container, .sound .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
       padding: 0 35px; } }
   @media screen and (min-width: 768px) {
-    .header__content .container, .build .container, .archmove .container, .sound .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
       padding: 0 50px; } }
   @media screen and (min-width: 1280px) {
-    .header__content .container, .build .container, .archmove .container, .sound .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
       padding: 0;
       width: 1100px;
       margin: 0 auto; } }
@@ -417,6 +417,44 @@ button {
         left: 13px; }
       .sound .container .sound__inner .sound__slider .slick-arrow.slick-next:hover {
         background-color: #FD665E; }
+    .sound .container .sound__inner .sound__realize {
+      width: 100%;
+      margin: 160px 0 0 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center; }
+      .sound .container .sound__inner .sound__realize .realize__content__left {
+        width: 50%; }
+      .sound .container .sound__inner .sound__realize .realize__content__right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .sound .container .sound__inner .sound__realize .realize__content__right .relize__title {
+          font-size: 48px;
+          font-weight: 800;
+          line-height: 50px;
+          color: #000; }
+          .sound .container .sound__inner .sound__realize .realize__content__right .relize__title span {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 50px;
+            color: #FD665E; }
+        .sound .container .sound__inner .sound__realize .realize__content__right .realize__btn {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          color: #FFF;
+          padding: 16px 30px;
+          white-space: nowrap;
+          background-color: #FD665E;
+          align-self: flex-start;
+          border-radius: 4px;
+          margin: 70px 0 0 0; }
+          .sound .container .sound__inner .sound__realize .realize__content__right .realize__btn:hover {
+            background-color: #fc362c; }
 
 /* Слайдер */
 /* Слайдер запущен */
@@ -441,5 +479,79 @@ button {
 /* Точки (булиты) */
 /* Активная точка */
 /* Элемент точки */
+.header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
+  padding: 0 15px; }
+  @media screen and (min-width: 575px) {
+    .header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
+      padding: 0 35px; } }
+  @media screen and (min-width: 768px) {
+    .header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
+      padding: 0 50px; } }
+  @media screen and (min-width: 1280px) {
+    .header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
+      padding: 0;
+      width: 1100px;
+      margin: 0 auto; } }
+
+.partners {
+  margin: 130px 0 0 0;
+  border-bottom: 1px solid #C7C7C7; }
+  .partners .container .partners__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+    .partners .container .partners__inner .partners__title {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 60px;
+      color: #000;
+      max-width: 448px; }
+    .partners .container .partners__inner .prtners__wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: 55px 0 75px 0; }
+
+.header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
+  padding: 0 15px; }
+  @media screen and (min-width: 575px) {
+    .header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
+      padding: 0 35px; } }
+  @media screen and (min-width: 768px) {
+    .header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
+      padding: 0 50px; } }
+  @media screen and (min-width: 1280px) {
+    .header__content .container, .build .container, .archmove .container, .sound .container, .partners .container, .footer .container {
+      padding: 0;
+      width: 1100px;
+      margin: 0 auto; } }
+
+.footer {
+  border-bottom: 0.5px solid #C7C7C7; }
+  .footer .container .footer__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 80px 0 80px 0; }
+    .footer .container .footer__nav .footer__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      .footer .container .footer__nav .footer__list .footer__item {
+        margin: 0 50px 0 0; }
+        .footer .container .footer__nav .footer__list .footer__item .footer__link {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 20px;
+          color: #585858;
+          transition: .5s; }
+          .footer .container .footer__nav .footer__list .footer__item .footer__link:hover {
+            color: #FD665E; }
 
 /*# sourceMappingURL=style.min.css.map */

@@ -81,6 +81,43 @@
                 }
             }
 
+
+
+            .sound__realize{
+                width: 100%;
+                margin: 160px 0 0 0;
+                @include flex (flex,row,flex-start,center);
+                .realize__content__left{
+                    width: 50%;
+                    .realize__img{
+
+                    }
+                }
+
+                .realize__content__right{
+                    width: 50%;
+                    @include flex (flex,column,center,center);
+                    .relize__title{
+                        @include text(48px,800,50px,$textColor);
+                        span{
+                            @include text(48px,800,50px,$acentColor);
+                        }
+                    }
+
+                    .realize__btn{
+                        @include text(14px,400,20px,$primaryColor);
+                        padding: 16px 30px;
+                        white-space: nowrap;
+                        background-color: $acentColor;
+                        align-self:flex-start;
+                        border-radius: 4px;
+                        margin: 70px 0 0 0;
+                        &:hover{
+                            background-color: darken($acentColor, 10%);
+                        }
+                    }
+                }
+            }
         }
     }
 
