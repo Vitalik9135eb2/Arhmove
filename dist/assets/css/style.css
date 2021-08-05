@@ -6,10 +6,6 @@
     border: 0;
 }
 
-*, *:before, *:after {
-    box-sizing: border-box;
-}
-
 :focus, :active {
     outline: none;
 }
@@ -105,24 +101,24 @@ button {
   font-weight: 600;
 }
 
-.header__content .container, .build .container, .archmove .container {
+.header__content .container, .build .container, .archmove .container, .sound .container {
     padding: 0 15px;
 }
 
 @media screen and (min-width: 575px) {
-    .header__content .container, .build .container, .archmove .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container {
         padding: 0 35px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .header__content .container, .build .container, .archmove .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container {
         padding: 0 50px;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .header__content .container, .build .container, .archmove .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container {
         padding: 0;
         width: 1100px;
         margin: 0 auto;
@@ -281,24 +277,24 @@ button {
     width: 100%;
 }
 
-.header__content .container, .build .container, .archmove .container {
+.header__content .container, .build .container, .archmove .container, .sound .container {
     padding: 0 15px;
 }
 
 @media screen and (min-width: 575px) {
-    .header__content .container, .build .container, .archmove .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container {
         padding: 0 35px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .header__content .container, .build .container, .archmove .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container {
         padding: 0 50px;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .header__content .container, .build .container, .archmove .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container {
         padding: 0;
         width: 1100px;
         margin: 0 auto;
@@ -394,24 +390,24 @@ button {
     opacity: 0;
 }
 
-.header__content .container, .build .container, .archmove .container {
+.header__content .container, .build .container, .archmove .container, .sound .container {
     padding: 0 15px;
 }
 
 @media screen and (min-width: 575px) {
-    .header__content .container, .build .container, .archmove .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container {
         padding: 0 35px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .header__content .container, .build .container, .archmove .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container {
         padding: 0 50px;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .header__content .container, .build .container, .archmove .container {
+    .header__content .container, .build .container, .archmove .container, .sound .container {
         padding: 0;
         width: 1100px;
         margin: 0 auto;
@@ -443,8 +439,8 @@ button {
 
 .archmove .container .archmove__inner .archmove__content_left .archmove__img {
     margin-top: 40px;
-    width: 535px;
-    height: 610px;
+    width: 435px;
+    height: 510px;
 }
 
 .archmove .container .archmove__inner .archmove__content_right {
@@ -456,6 +452,21 @@ button {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    margin: 70px 0 0 0;
+}
+
+.archmove .container .archmove__inner .archmove__content_right .archmove__text_wrap {
+    max-width: 305px;
+    margin: 50px 0 0 200px;
+    position: relative;
+}
+
+.archmove .container .archmove__inner .archmove__content_right .archmove__text_wrap .archmove__img {
+    position: absolute;
+    left: -75px;
+    top: 5px;
 }
 
 .archmove .container .archmove__inner .archmove__content_right .archmove__text_wrap .archmove__span {
@@ -465,3 +476,176 @@ button {
     line-height: 26px;
     color: #000;
 }
+
+.archmove .container .archmove__inner .archmove__content_right .archmove__text_wrap .archmove_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #000;
+    margin: 10px 0 0 0;
+}
+
+.archmove .container .archmove__inner .archmove__content_right .archmove__btn {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #FFF;
+    margin: 70px 0 0 60px;
+    padding: 8px 30px;
+    border-radius: 4px;
+    background-color: #FD665E;
+}
+
+.archmove .container .archmove__inner .archmove__content_right .archmove__btn:hover {
+    background-color: #fc362c;
+}
+
+.header__content .container, .build .container, .archmove .container, .sound .container {
+    padding: 0 15px;
+}
+
+@media screen and (min-width: 575px) {
+    .header__content .container, .build .container, .archmove .container, .sound .container {
+        padding: 0 35px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__content .container, .build .container, .archmove .container, .sound .container {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header__content .container, .build .container, .archmove .container, .sound .container {
+        padding: 0;
+        width: 1100px;
+        margin: 0 auto;
+    }
+}
+
+.sound {
+    margin: 130px 0 0 0;
+}
+
+.sound .container .sound__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+    min-width: 0;
+}
+
+.sound .container .sound__inner .sound__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #000;
+    max-width: 390px;
+    -ms-flex-item-align: start;
+    align-self: start;
+}
+
+.sound .container .sound__inner .sound__slider__wrap {
+    min-width: 0;
+    position: relative;
+    max-width: 730px;
+    max-height: 170px;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+}
+
+.sound .container .sound__inner .sound__slider__wrap .sound__slider__content .slider__text {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 51px;
+    color: #000;
+    text-overflow: ellipsis;
+    max-height: 190px;
+    max-width: 730px;
+}
+
+.sound .container .sound__inner .sound__slider__wrap .slick-arrow {
+    position: absolute;
+    top: 220px;
+    left: 0;
+    font-size: 0;
+    width: 60px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.sound .container .sound__inner .sound__slider__wrap .slick-arrow.slick-prev {
+    left: 470px;
+    display: block;
+    background-color: #fff;
+}
+
+.sound .container .sound__inner .sound__slider__wrap .slick-arrow.slick-prev::before {
+    position: absolute;
+    content: "→";
+    color: #000;
+    font-weight: 900;
+    width: 20px;
+    height: 20px;
+    font-size: 35px;
+    top: -2px;
+    left: 13px;
+}
+
+.sound .container .sound__inner .sound__slider__wrap .slick-arrow.slick-prev:hover {
+    background-color: #FD665E;
+}
+
+.sound .container .sound__inner .sound__slider__wrap .slick-arrow.slick-next {
+    left: 400px;
+    display: block;
+    background-color: #fff;
+}
+
+.sound .container .sound__inner .sound__slider__wrap .slick-arrow.slick-next::before {
+    position: absolute;
+    content: "←";
+    color: #000;
+    font-weight: 900;
+    width: 20px;
+    height: 20px;
+    font-size: 35px;
+    top: -2px;
+    left: 13px;
+}
+
+.sound .container .sound__inner .sound__slider__wrap .slick-arrow.slick-next:hover {
+    background-color: #FD665E;
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */

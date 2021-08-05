@@ -20,12 +20,16 @@
                 max-width: 730px;
                 max-height: 170px;
                 align-self: flex-end;
-                .slider__text{
-                    @include text (32px,400,51px,$textColor);
-                    text-overflow: ellipsis;
-                    max-height: 190px;
-                    max-width: 730px;
+                .sound__slider__content{
+                    
+                    .slider__text{
+                        @include text (32px,400,51px,$textColor);
+                        text-overflow: ellipsis;
+                        max-height: 190px;
+                        max-width: 730px;
+                    }
                 }
+                
             }
 
             .sound__slider__wrap .slick-arrow{
