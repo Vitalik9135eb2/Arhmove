@@ -1,0 +1,157 @@
+@import "./assets/mixins";
+@import "./assets/vars";
+
+
+.archmove{
+    margin: 130px 0 0 0;
+    @media screen and (max-width: 1600px){
+        margin: 80px 0 0 0;
+    }
+    @media screen and (max-width: 1200px){
+        margin: 50px 0 0 0;
+    }
+    @media screen and (max-width: 768px){
+        margin: 30px 0 0 0;
+    }
+    @media screen and (max-width: 576px){
+        margin: 50px 0 0 0;
+    }
+    .container{
+        @extend %container;
+        .archmove__inner{
+            @include flex (flex,row,flex-start,center);
+            @media screen and (max-width: 576px){
+                @include flex (flex,column,center,center);
+            }
+
+            .archmove__content_left{
+                @media screen and (max-width: 576px){
+                    @include flex (flex,column,center,center);
+                }
+                .archmove__title{
+                    @include text (48px,600,60px,$textColor);
+                    max-width: 448px;
+                    @media screen and (max-width: 1200px){
+                        @include text (46px,600,50px,$textColor);
+                        max-width: 380px;
+                    }
+                    @media screen and (max-width: 768px){
+                        @include text (38px,600,40px,$textColor);
+                    }    
+                }
+
+                .archmove__img{
+                    margin-top: 40px;
+                    width: 435px;
+                    height: 510px;
+                    @media screen and (max-width: 1200px){
+                        width: 400px;
+                        height: 430px;
+                    }
+                    @media screen and (max-width: 992px){
+                        width: 350px;
+                        height: 410px;
+                    }
+                    @media screen and (max-width: 768px){
+                        width: 275px;
+                        height: 320px;
+                    }
+                }
+            }
+            .archmove__content_right{
+                @include flex (flex,column,center,center);
+                flex: 0 0 50%;
+                margin: 70px 0 0 0;
+                @media screen and (max-width: 1200px){
+                    margin: 150px 0 0 0;
+                }
+                @media screen and (max-width: 576px){
+                    margin: 30px 0 0 0;
+                }
+                .archmove__text_wrap{
+                    max-width: 305px;
+                    margin: 50px 0 0 200px;
+                    position: relative;
+                    @media screen and (max-width: 1200px){
+                        margin: 25px 0 0 150px;
+                    }
+                    @media screen and (max-width: 1200px){
+                        margin: 25px 0 0 120px;
+                    }
+                    @media screen and (max-width: 768px){
+                        margin: 25px 0 0 70px;
+                    }
+                    @media screen and (max-width: 576px){
+                        margin: 25px 0 0 25px;
+                        max-width: 230px;
+                    }
+                    .archmove__img{
+                        position: absolute;
+                        left: -75px;
+                        top: 5px;
+                        @media screen and (max-width: 1200px){
+                            width: 45px;
+                            height: 45px;
+                            left: -55px;
+                        }
+                        @media screen and (max-width: 768px){
+                            width: 30px;
+                            height: 30px;
+                            left: -40px
+                        }
+                    }
+                    .archmove__span{
+                        display: block;
+                        @include text(16px,800,26px, $textColor);
+                        @media screen and (max-width: 1200px){
+                            @include text(14px,800,18px, $textColor);
+                        }
+                        @media screen and (max-width: 768px){
+                            @include text(12px,800,14px, $textColor);
+                        }
+                    }
+                    .archmove_text{
+                        @include text(16px,400,16px, $textColor);
+                        margin: 10px 0 0 0;
+                        @media screen and (max-width: 1200px){
+                            @include text(14px,400,18px, $textColor);
+                        }
+                        @media screen and (max-width: 768px){
+                            @include text(12px,400,14px, $textColor);
+                        }
+                    }
+
+                }
+
+                .archmove__btn{
+                    @include text(14px,400,40px, $primaryColor);
+                    margin: 70px 0 0 60px;
+                    padding: 8px 30px;
+                    border-radius: 4px;
+                    background-color: $acentColor;
+                    @media screen and (max-width: 1200px){
+                        padding: 5px 25px;
+                        margin: 50px 0 0 60px;
+                        font-size: 12px;
+                    }
+                    @media screen and (max-width: 992px){
+                        padding: 0px 25px;
+                        margin: 30px 0 0 60px;
+                    }
+                    @media screen and (max-width: 768px){
+                        padding: 0px 15px;
+                        margin: 30px 0 0 25px;
+                        line-height: 31px;
+                    }
+                    @media screen and (max-width: 576px){
+                        margin: 50px 0 0 0;
+                    }
+                    &:hover{
+                        background-color: darken($acentColor, 10%);
+                    }
+                }
+            }
+        }
+    }
+
+}
