@@ -111,6 +111,9 @@
                     margin-top: 80px;
                     overflow: auto;
                 }
+                @media screen and (max-width: 576px){
+                    flex-direction: column;
+                }
                 .header__list_item{
                     margin: 0 0 0 50px;
                     @media screen and (max-width: 1200px){
@@ -121,6 +124,9 @@
                         &:nth-child(1){
                             margin: 0;
                         }
+                    }
+                    @media screen and (max-width: 576px){
+                        margin: 35px 0 0 0;
                     }
                     .header__link{
                         @include text(14px,400,40px,$textColorLight);
