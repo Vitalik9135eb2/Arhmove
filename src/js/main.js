@@ -41,6 +41,18 @@ $(document).ready(function(){
 
 //**burger menu */
 
+const buildBtn = document.querySelector(".build__btn");
+const buildContent = document.querySelector(".build__content");
+
+if(buildBtn){
+    buildBtn.addEventListener("click" , function(e){
+        buildBtn.classList.toggle("active");
+        buildContent.classList.toggle("active");
+
+    })
+}
+
+
 
 
 const iconMenu = document.querySelector(".header__menu__btn");
