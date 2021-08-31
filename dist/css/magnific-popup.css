@@ -349,3 +349,18 @@ img.mfp-img {
   .mfp-container {
     padding-left: 6px;
     padding-right: 6px; } }
+
+    @media all and (max-width: 576px){
+
+      button.mfp-close{
+        position: absolute !important;
+        top: 13% !important;
+        right: 3% !important;
+        z-index: 9999 !important;
+      }
+  
+      img.mfp-img{
+        width: 310px;
+      }
+    }
+    
